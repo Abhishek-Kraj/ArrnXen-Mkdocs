@@ -1,9 +1,18 @@
 site_name: ArrnXen Docs
-site_url: https://abhishek-kraj.github.io/ArrnXen-Mkdocs/  # ← Uncomment and fix this line!
+site_url: https://abhishek-kraj.github.io/ArrnXen-Mkdocs/
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - toc.integrate
+
 plugins:
-  - git-revision-date
+  - search
+  - git-revision-date:
+      enabled: true
+
 nav:
   - Home: index.md
   - User Guide: user-guide.md
+  - Changelog: changelog.md
